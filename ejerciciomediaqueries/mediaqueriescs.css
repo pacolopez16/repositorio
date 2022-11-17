@@ -1,0 +1,43 @@
+body {
+    background-color:aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .wrapper {overflow: auto;}
+    
+    #main {margin-left: 4px;}
+    
+    #colocacion {
+      float: none;
+      width: auto;
+    }
+    
+    #menu1 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu2 {
+      background: yellow;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      list-style-type: none;
+      margin: 4px;
+      padding: 2px;
+      text-align:center;
+      height: 50px;
+      
+    }
+    
+    @media screen and (min-width: 480px) {
+      #colocacion {width: 200px; float: right;}
+      #main {margin-right: 220px;}
+    }
+    @media print {
+        body {
+            background-color: #fff;
+            font-family: 'Arial', Times, serif;
+        }
+        #colocacion {
+            display:none;
+        }
+    }
